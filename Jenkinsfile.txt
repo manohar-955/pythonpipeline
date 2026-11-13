@@ -1,19 +1,22 @@
-pipeline{
+pipeline {
     agent any
-    stages{
-        stage("Checkout"){
-            steps{
+
+    stages {
+        stage('Checkout') {
+            steps {
                 echo 'Downloading code'
             }
         }
-        stage('Run'){
-            steps{
+
+        stage('Run') {
+            steps {
                 bat 'python app.py'
             }
         }
-        stage('Test'){
-            steps{
-                echo 'Testing Completed'
+
+        stage('Test') {
+            steps {
+                echo 'Testing completed'
             }
         }
     }
