@@ -10,7 +10,7 @@ pipeline {
 
         stage('Run') {
             steps {
-                bat 'python app.py'
+               bat '"C:\\Users\\manoh\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe" app.py'
             }
         }
 
